@@ -9,7 +9,7 @@ const HolidayContainer = styled.div`
 const Holiday = () => {
   return (
     <>
-      <HolidayContainer>
+   <HolidayContainer>
         <h1>Holiday</h1>
       </HolidayContainer>
     </>
