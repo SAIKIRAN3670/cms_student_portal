@@ -3,6 +3,11 @@ import styled, { css } from 'styled-components'
 import Dashboard from '@material-ui/icons/Dashboard';
 import HomeIcon from "@material-ui/icons/Home";
 import { Link } from 'react-router-dom';
+import GroupAddIcon from '@material-ui/icons/GroupAdd';
+import { CgLogOut } from "react-icons/cg";
+import { FaAddressCard } from "react-icons/fa";
+import { BsCalendarWeekFill } from "react-icons/bs";
+
 
 const SideBarContainer = styled.div`
   flex: 1;
@@ -58,13 +63,13 @@ const SideBar = () => {
           <SidebarList>
             <Link to="/AddStudent" className="link">
               <SidebarListItem>
-                <HomeIcon />
+                <GroupAddIcon style={{ marginRight: "8px" }} />
                 Add Student
               </SidebarListItem>
             </Link>
             <Link to="/ViewStudent" className="link">
               <SidebarListItem>
-                <HomeIcon />
+                <FaAddressCard style={{marginRight:"8px"}} />
                 View Student
               </SidebarListItem>
             </Link>
@@ -75,13 +80,13 @@ const SideBar = () => {
           <SidebarList>
             <Link to="/AddTeacher" className="link">
               <SidebarListItem>
-                <HomeIcon />
+                <GroupAddIcon style={{ marginRight: "8px" }} />
                 Add Teacher
               </SidebarListItem>
             </Link>
             <Link to="/ViewTeacher" className="link">
               <SidebarListItem>
-                <HomeIcon />
+                <FaAddressCard style={{ marginRight: "8px" }} />
                 View Teacher
               </SidebarListItem>
             </Link>
@@ -92,14 +97,14 @@ const SideBar = () => {
           <SidebarList>
             <Link to="/Holiday" className="link">
               <SidebarListItem>
-                <HomeIcon />
+               <BsCalendarWeekFill style={{ marginRight: "8px" }} />
                 Holiday
               </SidebarListItem>
             </Link>
             <Link to="/Logout" className="link">
               <SidebarListItem>
-                <HomeIcon />
-                Logout
+                <CgLogOut style={{ marginRight: "8px" }} />
+                 Logout
               </SidebarListItem>
             </Link>
           </SidebarList>

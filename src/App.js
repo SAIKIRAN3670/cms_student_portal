@@ -10,6 +10,7 @@ import AddStudent from "./Pages/Student/AddStudent";
 import ViewStudent from './Pages/Student/ViewStudent';
 import ViewTeacher from './Pages/Teacher/ViewTeacher';
 import Logout from "./Pages/Other/Logout"
+import Footer from './Pages/Footer/Footer';
 function App() {
   return (
     <>
@@ -31,6 +32,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Footer/>
     </>
   );
 }

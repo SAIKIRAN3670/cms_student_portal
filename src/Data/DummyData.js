@@ -22,7 +22,7 @@ export const FeaturedData = [
   },
   {
     id: "2",
-    title: "No. of Teachers ",
+    title: "Other  ",
     Total: "5000",
     year: "2022",
     icon: "/images/teacher.png",
