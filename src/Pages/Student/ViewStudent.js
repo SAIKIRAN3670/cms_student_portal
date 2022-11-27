@@ -37,6 +37,7 @@ const ViewStudent = () => {
       .then((response) => {
         // const allStudents = response;
         // setStudentData(allStudents);
+        
         console.log(response.data);
       })
       .catch((error) => {
