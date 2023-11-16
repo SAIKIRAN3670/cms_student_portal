@@ -1,5 +1,5 @@
-import React, { useRef, useState } from "react";
-import styled from "styled-components";
+
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import axios from "axios";
 import classNames from "classnames";
@@ -7,9 +7,7 @@ import Swal from "sweetalert2";
 import PersonOutlineIcon from "@material-ui/icons/PersonOutline";
 
 const AddStudent = () => {
-  const form = useRef();
   const [submit, setSubmit] = useState("Submit");
-
   const {
     register,
     handleSubmit,
@@ -45,7 +43,7 @@ const AddStudent = () => {
     formData.append("cpass", data.cpass);
     axios({
       method: "post",
-      url: "http://localhost:8012/school_backend/AddStudent.php",
+      url: "http://localhost/school_backend/AddStudent.php",
       data: formData,
       config: { headers: { "Content-Type": "multipart/form-data" } },
     })
